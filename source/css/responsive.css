@@ -23,6 +23,7 @@
   .swiper-caption__content {
     width: 100%;
     max-width: 90%;
+    background-color: var(--secondary_90);
   }
 }
 
