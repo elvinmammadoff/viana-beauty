@@ -2,7 +2,7 @@
 
 Name: main.js
 Author: Alissio
-Website: https://www.focus-slider.com
+Website: https://www.viana-beauty.com
 Exclusively available here: https://themeforest.net/user/alissio
 
 ------------------------------------- */
