@@ -1,0 +1,212 @@
+@charset "utf-8"
+
+/* ----------------------------------
+ *
+ *Name: style.css
+ *Author: Alissio
+ *Website: https://www.viana-beauty.com
+ *Exclusively available here: https://themeforest.net/user/alissio
+ *
+ *-------------------------------------
+
+/*====================================================
+ *
+ *
+ *	Table of Contents
+ *	
+ *	
+ *
+ *		01. Generel Styles
+ *
+ *			+ Generate Google Fonts 
+ *			+ Essentials
+ *
+ *		02. Image Slider
+ *
+ *		03. Quote Slider
+ *
+ *		03. Swiper Slider
+ *
+ *			+ Navigation
+ *
+ *
+ *
+ *	
+ *====================================================
+
+/*======================
+ *
+ *	01. Generel Styles 
+ *
+ *========================
+
+/* Generate Google Fonts 
+ *-------------------------
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap')
+
+/* Essentials
+ *-------------------------
+
+\:root
+  --primary:#A58E67
+  --secondary:#618252
+  --secondary_90:rgba(97, 130, 82, 0.9)
+  --primaryLight:#D6C390
+  --white:#fff
+  --gray:#ccc
+  --mainFont:'Open Sans', serif
+
+body
+  margin: 0
+  font-family: var(--mainFont)
+
+/*======================
+ *
+ *	02. Image Slider
+ *
+ *========================
+
+.slider
+  width: 100%
+  height: 100%
+  position: relative
+  background-color: var(--primaryLight)
+
+.image-slider
+  width: 100%
+
+  .swiper-slide
+    position: relative
+    overflow: hidden
+
+    .swiper-caption__content
+      -webkit-transform: translate3d(-55px, 0, 0)
+      transform: translate3d(-55px, 0, 0)
+      opacity: 0
+      -webkit-transition: all 0.7s ease-out
+      -o-transition: all 0.7s ease-out
+      transition: all 0.7s ease-out
+
+  .swiper-slide-active .swiper-caption__content, .swiper-slide-duplicate-active .swiper-caption__content
+    opacity: 1
+    -webkit-transform: none
+    -ms-transform: none
+    transform: none
+
+/*======================
+ *
+ *	02. Quote Slider 
+ *
+ *========================
+
+.quote-slider
+  height: 100%
+
+.quote-slider__text
+  display: block
+  font-size: 25px
+  font-weight: normal
+  font-family: var(--mainFont)
+  color: var(--white)
+
+.quote-slider__ttl
+  font-size: 46px
+  margin-bottom: 28px
+  font-weight: bold
+  color: var(--white)
+  font-family: var(--mainFont)
+
+/*======================
+ *
+ *	03. Swiper Slider 
+ *
+ *========================
+
+.swiper-slide-shadow-left, .swiper-slide-shadow-right
+  display: none
+
+.swiper-caption
+  position: absolute
+  left: 0
+  width: 50%
+  z-index: 2
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  -webkit-box-pack: end
+  -ms-flex-pack: end
+  justify-content: flex-end
+  height: 100%
+
+.swiper-caption__content
+  padding: 49px 80px 49px 54px
+  max-width: 564px
+  margin-right: -150px
+  z-index: 2
+  background-color: var(--secondary)
+  -webkit-transition: all 0.7s ease-out
+  -o-transition: all 0.7s ease-out
+  transition: all 0.7s ease-out
+
+.swiper-slide-active .swiper-caption__content
+  opacity: 1
+
+/* Navigation
+ *-------------------------
+
+.slider-navigation
+  position: absolute
+  bottom: 0
+  left: 50%
+  -webkit-transform: translateX(-50%)
+  -ms-transform: translateX(-50%)
+  transform: translateX(-50%)
+  z-index: 3
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  margin-bottom: 29px
+
+  .slider-arrow
+    position: relative
+    background: none
+    width: 53px
+    height: 56px
+    left: auto
+    right: 0
+    margin-top: 0
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+    background-color: var(--primary)
+    -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px
+    -webkit-transition: all 0.4s ease-out
+    -o-transition: all 0.4s ease-out
+    transition: all 0.4s ease-out
+
+    &:hover
+      background-color: var(--primaryLight)
+
+    ion-icon
+      font-size: 1.4rem
+      color: var(--white)
+
+  .swiper-button-prev
+    margin-right: 20px
+
+.slider
+  .swiper-button-next, .swiper-button-prev
+    background-image: none
