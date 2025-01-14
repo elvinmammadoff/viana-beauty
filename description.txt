@@ -89,7 +89,7 @@
 </p><p><strong>– Alissio –</strong></p>
 
 <h3 id="item-description__change-log">Change Log:</h3>
-<p>V. 1.0.0 – 07.01.2025</p>
+<p>V. 1.0.0 – 14.01.2025</p>
 <pre>- Initial release</pre>
 <p>If you love our product, Don’t forget to rate it 5 stars</p>
 <p>
