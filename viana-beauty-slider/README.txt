@@ -10,7 +10,7 @@ Thank you for purchasing Viana Beauty Slider! This lightweight and responsive sl
 ------------------------------------------------------------
 After extracting the downloaded zip file, you will see the following structure:
 
-viana-beauty/
+viana-beauty-slider/
 ├── documentation/       # Full Documentation in HTML format
 ├── demos/               # Demo files for easy setup
 │   ├── index.html       # Example slider file
